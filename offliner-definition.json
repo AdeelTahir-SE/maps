@@ -98,6 +98,13 @@
       "title": "Debug",
       "description": "Enable verbose output"
     },
+    "zim-workers": {
+      "type": "integer",
+      "required": false,
+      "title": "ZIM workers",
+      "description": "Number of threads to process items in libzim at ZIM creation",
+      "min": 4
+    },
     "area": {
       "type": "string",
       "required": false,
