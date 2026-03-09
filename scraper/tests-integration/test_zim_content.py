@@ -70,7 +70,7 @@ def test_zim_content_config_json(zim_fh: Archive):
     config_json_item = zim_fh.get_item("content/config.json")
     assert config_json_item.mimetype == "application/json"
     config_json = json.loads(bytes(config_json_item.content))
-    assert config_json["center"] == [43.74, 7.43]
+    assert config_json["center"] == [7.43, 43.74]
     assert config_json["zoom"] == 13
     assert config_json["secondaryColor"] == "#FFFFFF"
     assert config_json["zimName"] == "maps_en_test"
