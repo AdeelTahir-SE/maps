@@ -105,7 +105,7 @@ class Context:
     # Default is 6 (only 4096 tiles globally)
     include_up_to_zoom: int | None = 6
 
-    # Default map view: (longitude, latitude, zoom)
+    # Default map view: (latitude, longitude, zoom)
     default_view: tuple[float, float, float] | None = None
 
     # Geonames region to download (e.g. "allCountries", "FR", "US")
