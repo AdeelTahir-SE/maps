@@ -1,7 +1,13 @@
 import "./style.css";
 
 import { Map } from "maplibre-gl";
+import maplibre from "maplibre-gl";
 import axios from "axios";
+
+maplibre
+  .setRTLTextPlugin("./assets/mapbox-gl-rtl-text.js", true)
+  .then(() => console.log("RTL plugin loaded"))
+  .catch((err) => console.error("RTL plugin error:", err));
 
 const baseUrl =
   window.location.origin +
@@ -136,7 +142,7 @@ const parseUrlFragment = () => {
   });
 
   const setMapStyle = (styleName) => {
-    map.setStyle(`./styles/${styleName}`, {
+    map.setStyle(`./assets/${styleName}`, {
       validate: false,
       transformStyle: (previousStyle, nextStyle) => {
         return {

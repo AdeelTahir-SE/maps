@@ -14,6 +14,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Remove pin button with display of coordinates and zoom (#58)
 - Remove style selector (#57)
 - Switch to automatically chosen map style based on prefer-colors-scheme (#56)
+- Fix support of RTL strings in the map (#54)
+- Move from --assets to --dl CLI param for code clarity (#68)
+- Fix bad favicon paths (#68)
 
 ## [0.1.1] - 2026-03-10
 

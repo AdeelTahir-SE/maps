@@ -17,7 +17,7 @@ WORKDIR /output
 
 # Copy pyproject.toml and its dependencies
 COPY README.md /src/
-COPY scraper/pyproject.toml /src/scraper/
+COPY scraper/pyproject.toml scraper/openzim.toml /src/scraper/
 COPY scraper/src/maps2zim/__about__.py /src/scraper/src/maps2zim/__about__.py
 
 # Install Python dependencies
