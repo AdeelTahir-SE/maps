@@ -1496,6 +1496,7 @@ class Processor:
 <head>
     <title>{place.label}</title>
     <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="{root_prefix}/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="0;URL='{map_url}'" />
     <link rel="stylesheet" href="{root_prefix}assets/styles.css">
@@ -1532,6 +1533,7 @@ class Processor:
 <html lang="en">
 <head>
     <title>{name} - Disambiguation</title>
+    <link rel="icon" type="image/x-icon" href="{root_prefix}/favicon.ico" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{root_prefix}assets/styles.css">
@@ -1693,6 +1695,7 @@ class Processor:
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - {title_escaped}</title>
     <link rel="stylesheet" href="../assets/styles.css">
