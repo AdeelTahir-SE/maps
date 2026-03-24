@@ -316,3 +316,6 @@ pyrightconfig.json
 output
 tmp
 extract
+
+# File(s) fetched by hatch-openzim plugin
+scraper/src/maps2zim/assets/mapbox-gl-rtl-text.js

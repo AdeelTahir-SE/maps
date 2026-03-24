@@ -20,6 +20,8 @@ dynamic = ["authors", "classifiers", "keywords", "license", "version", "urls"]
 kind = "scraper"
 additional-keywords = ["openstreetmap"]
 
+[tool.hatch.build.hooks.openzim-build]
+
 [project.optional-dependencies]
 scripts = ["invoke==2.2.1"]
 lint = ["black==26.1.0", "ruff==0.15.0"]

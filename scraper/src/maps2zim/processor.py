@@ -303,6 +303,9 @@ class Processor:
         context.current_thread_workitem = "tilejson"
         self._write_tilejson(creator)
 
+        context.current_thread_workitem = "mapbox-gl-rtl-text.js"
+        self._write_mapbox_gl_rtl_text(creator)
+
         # Initialize tile filter if poly files or zoom filtering is specified
         tile_filter: TileFilter | None = None
         if context.include_poly_urls or context.include_up_to_zoom is not None:
@@ -1754,3 +1757,11 @@ class Processor:
             is_front=True,
             title=f"About - {title}",
         )
+
+    def _write_mapbox_gl_rtl_text(self, creator: Creator):
+        """Add mapbox plugin"""
+
+        creator.add_item_for(
+            path="assets/mapbox-gl-rtl-text.js", fpath=assets / "mapbox-gl-rtl-text.js"
+        )
+        logger.info("  mapbox-gl-rtl-text.js added to ZIM")

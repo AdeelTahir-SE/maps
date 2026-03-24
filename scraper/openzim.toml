@@ -1,0 +1,7 @@
+[files.assets.config]
+target_dir="src/maps2zim/assets"
+
+[files.assets.actions."mapbox-gl-rtl-text"]
+action="get_file"
+source="https://unpkg.com/@mapbox/mapbox-gl-rtl-text@0.4.0/dist/mapbox-gl-rtl-text.js"
+target_file="mapbox-gl-rtl-text.js"
