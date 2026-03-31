@@ -14,6 +14,7 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
 
+from libzim.writer import Hint
 from pydantic import BaseModel
 from schedule import every, run_pending
 from zimscraperlib.download import save_large_file
@@ -983,9 +984,10 @@ class Processor:
                         should_compress=True,
                     )
 
-                # Create redirect from tile to dedupl
-                creator.add_redirect(tile_path, dedupl_path)
-
+                # Create alias from tile to dedupl
+                creator.add_alias(
+                    tile_path, "", dedupl_path, hints={Hint.FRONT_ARTICLE: False}
+                )
                 written_tiles += 1
 
                 # Log progress every LOG_EVERY_SECONDS
